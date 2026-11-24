@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Universal Resets */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+}
+
+/* Body wide styling */
+body {
+  color: #6e6e6e;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+.page {
+  max-width: 1000px;
+  /* height: 700px; */
+  background-color: rgb(220, 239, 255);
+  margin: 40px auto;
+  padding: 60px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+/* Top Row (.hero) */
+.hero {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  /* border: 2px solid; */
+  gap: 40px;
+}
+.hero-copy,
+.hero-media {
+  flex: 1;
+  width: calc(50% - 40px);
+}
+/* Hero content div (.hero-copy) */
+.hero-copy {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.hero-title {
+  color: #141414;
+  line-height: 1.2;
+  font-size: 48px;
+  font-weight: 700;
+}
+.hero-text {
+  color: #6e6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+}
+.btn {
+  display: inline-block;
+  background-color: #141414;
+  color: #ffffff;
+  padding: 14px 28px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 9999px;
+}
+/* Hero media div (.hero-media) */
+.hero-media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* border: 2px solid; */
+  position: relative;
+}
+/* Position = Relative, this is the element that determine the positioning of the .media-arch image */
+.media-circle {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 90px;
+}
+.media-arch {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+}
+/* Bottom Row container (.features) */
+.features {
+  background-color: #262626;
+  color: #bebebe;
+  margin: 40px auto;
+  width: 100%;
+  height: 35%;
+  border: none;
+  border-radius: 30px;
+  padding: 40px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+/* The 3 bottom cards (.feature) */
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(33% - 40px);
+}
+.feature-icon {
+  display: inline-block;
+}
+.feature-title {
+  margin-bottom: 14px;
+}
+
+.feature-text {
+  font-size: 12px;
+}
